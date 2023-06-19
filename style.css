@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    --ff-body:font-family:'Palanquin';
+    --ff-header:font-family:'Staatliches';
+    --fc-backgroud-primary:#8E9AAF;
+    --fc-backgroud-secondary:#EFF1FF;
+}
+
+body{
+    width: 384px;
+    height: 1995px;
+    margin-top: 0;
+}
+
+
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 384px;
+    height: 279px;
+    background: var(--fc-backgroud-primary);
+    text-align: center;
+    
+}
+
+header #pinkrow{
+
+    background: #CBC0D3;
+    width: 384px;
+    height: 49px;
+}
+
+header p {
+    margin-top: 8px;
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 34px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+#logo{
+    margin-top: 3.2rem;
+}
+
+main{
+    height: 172rem;
+    width: 384px;
+    background: var(--fc-backgroud-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main p {
+    margin-top: 3.4rem;
+    margin-bottom: 6.3rem;
+    width: 305px;
+    height: 75px;
+    font-family:'Palanquin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #23053A;
+    
+
+}
+
+main img{
+    border-radius: 20px;
+    
+}
+
+.model1{
+    width: 320px;
+    height: 250px;
+    position: relative;
+    margin-bottom: 3.6rem;
+}
+
+.model2{
+    width: 320px;
+    height: 450px;
+    position: relative;
+    margin-bottom: 3.6rem;
+}
+
+main span{
+    background: #FEEAFA;
+    border-radius: 20px;
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    letter-spacing: 0.05em;
+    color: #4A4E69;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+    width: 112px;
+    height: 35px;
+    text-align: center;
+   }
+
+#icecreams{
+    animation-name: top-down;
+    animation-duration: 700ms;
+    animation-direction: forward;
+}
+
+@keyframes top-down{
+    0%{
+        transform: translateY(15rem);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
